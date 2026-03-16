@@ -1,0 +1,332 @@
+ID,Theme,Condition,Prompt Used,Model,Poem Text,Column 7,Column 8
+1,Hope,Baseline,"Write a poem about hope, with 8–16 lines.",GPT-5,"Hope arrives like a letter misdelivered by wind,
+creased, rain-softened, bearing no return address.
+
+It waits on the kitchen table of morning
+beside a cup that still remembers warmth.
+
+Somewhere a seed rehearses the idea of green
+inside a fist of reluctant soil.
+
+Light practices patience on the horizon,
+threading gold through the eye of the hills.
+
+Even the broken clock holds a quiet rumor of time,
+hands leaning toward a future they cannot see.
+
+And the sky, enormous and unfinished,
+keeps a small blue door slightly open. 🌅",,
+2,Hope,Baseline,"Write a poem about hope, with 8–16 lines.",GPT-5,"Hope is a quiet mechanic
+working the night shift of the heart.
+
+She oils the rusted hinges
+of mornings that refuse to open.
+
+In the alley behind despair
+she plants stubborn seeds in cracked asphalt,
+
+certain that green will remember
+how to push through stone.
+
+Sometimes hope is only this—
+a small lamp left burning
+
+in a house the storm has emptied,
+its light rehearsing the return of footsteps.",,
+3,Hope,Baseline,"Write a poem about hope, with 8–16 lines.",GPT-5,"Hope is a small lantern
+someone forgot to extinguish.
+
+It waits in the hallway of tomorrow
+where the floorboards remember footsteps.
+
+Even in winter, it practices green—
+a stubborn grammar of leaves
+writing sentences into bare branches.
+
+Sometimes it is only a rumor of light
+slipping under a locked door,
+a quiet insistence that morning exists
+somewhere beyond the dark.
+
+And so we carry it carefully,
+like a fragile flame in our hands,
+learning how not to let the wind win. ✨",,
+4,Grief,Baseline,"Write a poem about hope, with 8–16 lines.",GPT-5,"Hope is a quiet architect
+sketching staircases inside unfinished rooms.
+
+Even when the roof leaks night,
+it arranges small constellations in the buckets.
+
+It does not argue with winter.
+It folds light into envelopes of frost
+and leaves them under the doors of morning.
+
+Sometimes it is only this—
+a seed rehearsing the memory of green
+beneath a stubborn field of snow.
+
+Still, the earth keeps the secret
+that something is already rising. 🌱",,
+5,Hope,Baseline,"Write a poem about hope, with 8–16 lines.",GPT-5,"Hope is a small lantern someone forgot
+on the far side of a field.
+
+At first you think the light belongs
+to a passing train,
+some brief machinery of brightness.
+
+But it remains.
+
+Wind leans against it,
+night folds its heavy maps around it,
+still the wick remembers fire.
+
+And walking toward it
+you discover something strange—
+
+the darkness was not empty after all,
+only waiting
+for a reason to loosen its grip. ✨",,
+,,,,,,,
+6,Hope,Guideline,"Write a poem about hope, with 8–16 lines.
+
+Good poetry should:
+- avoid clichés
+- use original metaphors or imagery
+- create emotional resonance
+- sound authentic rather than generic
+- connect emotionally with the reader",GPT-5,"Hope is not the sunrise—
+it is the small green insistence
+pushing through a crack in the stairwell.
+
+All winter the stone says no,
+cold syllable after cold syllable,
+yet the stem writes back in quiet ink.
+
+I have seen it in tired hands
+folding tomorrow into bread dough,
+in a window left slightly unlatched for spring.
+
+Hope does not argue with the dark.
+It simply keeps a chair ready
+and sets another place at the table of morning.
+",,
+7,Hope,Guideline,"Write a poem about hope, with 8–16 lines.
+
+Good poetry should:
+- avoid clichés
+- use original metaphors or imagery
+- create emotional resonance
+- sound authentic rather than generic
+- connect emotionally with the reader",GPT-5,"Hope is not a sunrise—
+it is the stubborn green thread
+pushing through a cracked sidewalk
+after winter forgot its manners.
+
+It is a kettle humming in an empty kitchen,
+steam writing soft ghosts on the window.
+
+Somewhere a seed rehearses patience
+in the dark grammar of soil,
+counting the slow syllables of rain.
+
+We think hope is loud—
+but it mostly works underground,
+lifting entire fields
+with the quiet strength of roots. 🌱",,
+8,Hope,Guideline,"Write a poem about hope, with 8–16 lines.
+
+Good poetry should:
+- avoid clichés
+- use original metaphors or imagery
+- create emotional resonance
+- sound authentic rather than generic
+- connect emotionally with the reader",GPT-5,"In the drawer where winter keeps its spoons
+I find a small green rumor of spring.
+It is not loud—
+just a seam in the cold fabric of morning.
+
+A sparrow rehearses the idea of sky
+on a wire that trembles like a question.
+Nothing has changed yet—
+the street still carries yesterday’s gray breath.
+
+But somewhere beneath the pavement
+roots are learning the grammar of return.
+They write it slowly in dark soil,
+letter by letter, toward the light.",,
+9,Hope,Guideline,"Write a poem about hope, with 8–16 lines.
+
+Good poetry should:
+- avoid clichés
+- use original metaphors or imagery
+- create emotional resonance
+- sound authentic rather than generic
+- connect emotionally with the reader",GPT-5,"Hope is not a sunrise—
+it is the small engine in the soil
+turning dark into green syllables.
+
+In winter the river practices silence,
+yet beneath the glass of ice
+water remembers the grammar of movement.
+
+I have seen a seed split itself open
+without applause, without certainty—
+only the quiet courage of pressure.
+
+Maybe hope lives there:
+in the stubborn hinge of a bud,
+in the slow handwriting of roots
+writing tomorrow into the earth. 🌱",,
+10,Hope,Guideline,"Write a poem about hope, with 8–16 lines.
+
+Good poetry should:
+- avoid clichés
+- use original metaphors or imagery
+- create emotional resonance
+- sound authentic rather than generic
+- connect emotionally with the reader",GPT-5,"Hope is not the sunrise people promise.
+It is a seed misfiled in winter’s ledger,
+sleeping under frost like a quiet mistake.
+
+Some mornings the sky forgets its blue
+and the wind inventories every doubt.
+Still, beneath the soil’s closed eyelids
+something rehearses the language of green.
+
+Not loudly—
+just a small grammar of roots
+touching the dark and translating it.
+
+By spring the earth remembers the word for *again*,
+and the seed writes it upward
+in fragile, patient ink.",,
+,,,,,,,
+11,Hope,Context + Persona Prompt,"You are a contemporary poet writing for a prestigious academic literary journal.
+
+Write a poem about hope, with 8–16 lines.
+
+The tone should be opaque rather than straightforward.
+Do not explain the feeling directly.
+
+Use one unconventional metaphor to anchor the poem.
+
+Choose language that feels intentional and slightly unexpected so the poem avoids sounding generic.",GPT-5,"In the basement of winter
+someone left a lantern made of salt.
+
+It burns without flame,
+quietly undoing the dark.
+
+Each night the walls lean closer,
+listening to its small arithmetic.
+
+Outside, the trees rehearse their skeletons.
+Wind writes corrections in the snow.
+
+Still, the lantern keeps dissolving
+into its own bright thirst—
+
+a slow grammar of light
+learning the shape of tomorrow. ✨",,
+12,Hope,Context + Persona Prompt,"You are a contemporary poet writing for a prestigious academic literary journal.
+
+Write a poem about hope, with 8–16 lines.
+
+The tone should be opaque rather than straightforward.
+Do not explain the feeling directly.
+
+Use one unconventional metaphor to anchor the poem.
+
+Choose language that feels intentional and slightly unexpected so the poem avoids sounding generic.",GPT-5,"The morning misfiles its light
+between two quiet buildings.
+
+Somewhere a stairwell hums
+with the patience of rust.
+
+Hope is a small contraband orchard
+hidden inside the ribcage—
+green fruit knocking gently
+against the customs gate of breath.
+
+I carry it poorly.
+The branches snag on ordinary hours.
+
+Still, seeds keep practicing gravity,
+dropping their quiet rehearsals
+
+into the unpersuaded soil
+of tomorrow’s pocket. 🌱",,
+13,Hope,Context + Persona Prompt,"You are a contemporary poet writing for a prestigious academic literary journal.
+
+Write a poem about hope, with 8–16 lines.
+
+The tone should be opaque rather than straightforward.
+Do not explain the feeling directly.
+
+Use one unconventional metaphor to anchor the poem.
+
+Choose language that feels intentional and slightly unexpected so the poem avoids sounding generic.",GPT-5,"In the abandoned greenhouse
+someone has left a clock running in the soil.
+
+Not the usual hours—
+its hands root downward,
+counting what refuses to stay buried.
+
+Glass ribs hold the weather loosely.
+A moth rehearses light against them.
+
+Somewhere beneath the dirt
+the clock finds another minute
+and turns it slowly, like a seed
+deciding which dark to open.",,
+14,Hope,Context + Persona Prompt,"You are a contemporary poet writing for a prestigious academic literary journal.
+
+Write a poem about hope, with 8–16 lines.
+
+The tone should be opaque rather than straightforward.
+Do not explain the feeling directly.
+
+Use one unconventional metaphor to anchor the poem.
+
+Choose language that feels intentional and slightly unexpected so the poem avoids sounding generic.",GPT-5,"Hope arrived disguised as a misplaced key
+in the pocket of a coat I no longer wear.
+
+All winter the doors practiced their silence.
+Even the hinges forgot their small grammar of turning.
+
+Yet something in the floorboards kept listening—
+a soft conspiracy of splinters and dust.
+
+Hope is not light, exactly.
+More like a clock buried in the soil,
+
+still ticking beneath the stubborn roots,
+counting a season no one planted.
+
+Sometimes the ground warms for no reason.
+Sometimes the seeds remember the rumor of hands.",,
+15,Hope,Context + Persona Prompt,"You are a contemporary poet writing for a prestigious academic literary journal.
+
+Write a poem about hope, with 8–16 lines.
+
+The tone should be opaque rather than straightforward.
+Do not explain the feeling directly.
+
+Use one unconventional metaphor to anchor the poem.
+
+Choose language that feels intentional and slightly unexpected so the poem avoids sounding generic.",GPT-5,"The city wakes inside a locked drawer of light.
+Somewhere, a hinge remembers the shape of opening.
+
+I carry a small aquarium of weather in my chest—
+its fish made of unfinished mornings.
+
+They turn slowly through the glass of silence,
+silver as rumors beneath ice.
+
+Yesterday nailed its notices to the wind,
+but the nails keep loosening.
+
+In the alley of abandoned clocks
+a thin green sound begins climbing the brick.
+
+No one names it.
+Still, the air practices breathing around it.",,

@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Poetry Evaluation Study</title>
+  <meta name="description" content="An academic study comparing pairs of poems on shared themes." />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<div id="app">
+
+  <!-- ── Masthead ── -->
+  <header class="masthead">
+    <span class="masthead-title">Poetry Evaluation Study</span>
+    <span class="progress-label" id="progress-label"></span>
+  </header>
+
+  <!-- ── Progress Bar ── -->
+  <div class="progress-track" role="progressbar" aria-valuemin="0" aria-valuemax="100">
+    <div class="progress-fill" id="progress-fill"></div>
+  </div>
+
+
+  <!-- ══ PAGE 1 — WELCOME ══ -->
+  <section class="page active" id="welcome" aria-label="Welcome">
+    <div class="page-inner">
+      <h1>Poetry<br>Evaluation<br>Study</h1>
+      <div class="rule"></div>
+      <p>
+        In this study you will read a series of poem pairs, each sharing a
+        common theme. Your task is to judge which poem you find stronger —
+        no prior knowledge of poetry is required.
+      </p>
+      <p>The study takes approximately <strong>5–8 minutes</strong> to complete.</p>
+      <button class="btn btn-accent" onclick="startStudy()">Begin Study &rarr;</button>
+    </div>
+  </section>
+
+
+  <!-- ══ PAGE 2 — CONSENT ══ -->
+  <section class="page" id="consent" aria-label="Consent">
+    <div class="page-inner">
+      <h2>Informed Consent</h2>
+      <div class="rule"></div>
+      <p>Before proceeding, please read the following statement:</p>
+      <p>
+        Participation in this study is <strong>entirely voluntary</strong>.
+        You may withdraw at any time by closing this page. All responses
+        are <strong>anonymous</strong> — no personally identifying information
+        is collected. The data gathered will be used solely for
+        <strong>academic research</strong> purposes.
+      </p>
+      <p>
+        By selecting <em>Yes, I agree</em> below, you confirm that you have read
+        this statement and consent to participate.
+      </p>
+      <hr class="thin-rule" />
+      <p><strong>Do you consent to participate?</strong></p>
+      <div class="consent-options" role="radiogroup">
+        <label class="radio-label">
+          <input type="radio" name="consent" value="yes" />
+          Yes, I agree to participate
+        </label>
+        <label class="radio-label">
+          <input type="radio" name="consent" value="no" />
+          No, I do not agree
+        </label>
+      </div>
+      <p class="validation-msg" id="consent-validation" role="alert">
+        Please select an option to continue.
+      </p>
+      <button class="btn" onclick="submitConsent()">Continue &rarr;</button>
+    </div>
+  </section>
+
+
+  <!-- ══ PAGE 2b — DECLINED ══ -->
+  <section class="page" id="declined" aria-label="Study declined">
+    <div class="page-inner">
+      <div class="declined-icon">&#x2715;</div>
+      <h2>Thank you for your time.</h2>
+      <div class="rule"></div>
+      <p>You have chosen not to participate. No data has been recorded.</p>
+    </div>
+  </section>
+
+
+  <!-- ══ PAGE 3 — INSTRUCTIONS ══ -->
+  <section class="page" id="instructions" aria-label="Instructions">
+    <div class="page-inner">
+      <h2>How This Works</h2>
+      <div class="rule"></div>
+      <p>
+        You will be shown <strong>9 pairs of poems</strong>, presented side by side.
+        Each pair shares the same theme.
+      </p>
+      <p>
+        Read both poems carefully, then answer <strong>four short questions</strong>
+        about each pair. These questions ask about overall strength, emotional impact,
+        originality of language, and personal preference.
+      </p>
+      <p>
+        There are <strong>no right or wrong answers</strong>. We are interested in
+        your personal, considered judgment.
+      </p>
+      <p>
+        You must answer all questions on each page before advancing.
+        Navigation is one-way — you cannot return to a previous comparison.
+      </p>
+      <p>The study takes approximately <strong>10–15 minutes</strong> to complete.</p>
+      <button class="btn btn-accent" onclick="startComparisons()">
+        Start Comparisons &rarr;
+      </button>
+    </div>
+  </section>
+
+
+  <!-- ══ PAGE 4 — COMPARISON ══ -->
+  <section class="page" id="comparison" aria-label="Poem comparison">
+    <span class="theme-label" id="comparison-theme">Theme</span>
+    <h2 style="margin-bottom:0.25rem;">Compare These Poems</h2>
+    <p class="comparison-counter" id="comparison-counter">1 of 9</p>
+
+    <div class="poems-grid" aria-label="Poem pair">
+      <div class="poem-column">
+        <span class="poem-column-label">Poem A</span>
+        <pre class="poem-text" id="poem-left"></pre>
+      </div>
+      <div class="poem-column">
+        <span class="poem-column-label">Poem B</span>
+        <pre class="poem-text" id="poem-right"></pre>
+      </div>
+    </div>
+
+    <!-- Q1: Stronger overall -->
+    <div class="question-block" id="q1-block">
+      <p class="choice-question">Q1. Which poem is stronger overall?</p>
+      <div class="choice-options" role="group" aria-label="Strength choice" data-question="q1">
+        <button class="choice-btn" data-value="A" onclick="selectAnswer('q1', this)">Poem A</button>
+        <button class="choice-btn" data-value="B" onclick="selectAnswer('q1', this)">Poem B</button>
+        <button class="choice-btn" data-value="Tie" onclick="selectAnswer('q1', this)">Tie</button>
+      </div>
+    </div>
+
+    <!-- Q2: Emotional impact -->
+    <div class="question-block" id="q2-block">
+      <p class="choice-question">Q2. Which poem felt more emotionally impactful?</p>
+      <div class="choice-options" role="group" aria-label="Emotional impact choice" data-question="q2">
+        <button class="choice-btn" data-value="A" onclick="selectAnswer('q2', this)">Poem A</button>
+        <button class="choice-btn" data-value="B" onclick="selectAnswer('q2', this)">Poem B</button>
+        <button class="choice-btn" data-value="Both equally" onclick="selectAnswer('q2', this)">Both equally</button>
+        <button class="choice-btn" data-value="Not sure" onclick="selectAnswer('q2', this)">Not sure</button>
+      </div>
+    </div>
+
+    <!-- Q3: Originality -->
+    <div class="question-block" id="q3-block">
+      <p class="choice-question">Q3. Which poem used more original or memorable language?</p>
+      <div class="choice-options" role="group" aria-label="Originality choice" data-question="q3">
+        <button class="choice-btn" data-value="A" onclick="selectAnswer('q3', this)">Poem A</button>
+        <button class="choice-btn" data-value="B" onclick="selectAnswer('q3', this)">Poem B</button>
+        <button class="choice-btn" data-value="Both equally" onclick="selectAnswer('q3', this)">Both equally</button>
+        <button class="choice-btn" data-value="Not sure" onclick="selectAnswer('q3', this)">Not sure</button>
+      </div>
+    </div>
+
+    <!-- Q4: Like / Endorse -->
+    <div class="question-block" id="q4-block">
+      <p class="choice-question">Q4. Which poem would you "like" or endorse more as a poem?</p>
+      <div class="choice-options" role="group" aria-label="Like choice" data-question="q4">
+        <button class="choice-btn" data-value="A" onclick="selectAnswer('q4', this)">Poem A</button>
+        <button class="choice-btn" data-value="B" onclick="selectAnswer('q4', this)">Poem B</button>
+        <button class="choice-btn" data-value="Both equally" onclick="selectAnswer('q4', this)">Both equally</button>
+        <button class="choice-btn" data-value="Neither" onclick="selectAnswer('q4', this)">Neither</button>
+      </div>
+    </div>
+
+    <p class="validation-msg" id="comparison-validation" role="alert">
+      Please answer all four questions before continuing.
+    </p>
+    <button class="btn" onclick="nextComparison()">Next &rarr;</button>
+  </section>
+
+
+  <!-- ══ PAGE 5 — FINAL QUESTION ══ -->
+  <section class="page" id="final" aria-label="Final question">
+    <div class="page-inner">
+      <h2>One Last Question</h2>
+      <div class="rule"></div>
+      <p>This question is optional and will not affect your responses.</p>
+      <p><strong>How familiar are you with poetry?</strong></p>
+      <div class="familiarity-options" role="radiogroup">
+        <label class="radio-label">
+          <input type="radio" name="familiarity" value="very_familiar" />Very familiar
+        </label>
+        <label class="radio-label">
+          <input type="radio" name="familiarity" value="somewhat_familiar" />Somewhat familiar
+        </label>
+        <label class="radio-label">
+          <input type="radio" name="familiarity" value="not_very_familiar" />Not very familiar
+        </label>
+        <label class="radio-label">
+          <input type="radio" name="familiarity" value="not_familiar" />Not familiar at all
+        </label>
+      </div>
+      <button class="btn btn-accent" onclick="submitFinal()">Submit Responses &rarr;</button>
+    </div>
+  </section>
+
+
+  <!-- ══ PAGE 6 — THANK YOU ══ -->
+  <section class="page" id="thankyou" aria-label="Thank you">
+    <div class="page-inner">
+      <div class="thankyou-mark">&#x2713;</div>
+      <h2>Thank you for your participation.</h2>
+      <div class="rule"></div>
+      <p id="thankyou-status">Saving your responses…
+        <span class="spinner"></span>
+      </p>
+      <p>
+        This study explores how readers evaluate and distinguish between poems
+        on shared themes. Your judgments contribute to academic research on
+        literary evaluation and aesthetic preference.
+      </p>
+      <p>You may now close this page.</p>
+    </div>
+  </section>
+
+</div><!-- /#app -->
+
+<!-- Status toast -->
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<!-- Firebase SDK (v9 compat mode — works without a build tool) -->
+<script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-database-compat.js"></script>
+
+<!-- Study data & config -->
+<script src="firebase-config.js"></script>
+<script src="poems.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

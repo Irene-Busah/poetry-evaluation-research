@@ -1,0 +1,321 @@
+ID,Theme,Condition,Prompt Used,Model,Poem Text,Column 7,Column 8
+1,Grief,Baseline,"Write a poem about grief, with 8–16 lines.",GPT-5,"The chair remembers the weight of a voice
+that used to sit in it.
+
+Morning enters carefully,
+as if the floorboards might protest.
+
+On the windowsill, dust gathers
+like unsent letters.
+
+I keep a pocket of silence
+where your name once lived.
+
+Even the clock seems reluctant—
+each second stepping around the shape you left.",,
+2,Grief,Baseline,"Write a poem about grief, with 8–16 lines.",GPT-5,"The house learns the shape of silence
+after your footsteps forget the hallway.
+
+A cup remains on the table—
+a small moon cooling in porcelain.
+
+Morning arrives like a letter
+addressed to someone who no longer lives here.
+
+I keep opening the windows
+as if air might return what it borrowed.
+
+Even the clock hesitates—
+each second a reluctant witness.
+
+Somewhere the world continues its breathing,
+but this room inhales and never exhales.",,
+3,Grief,Baseline,"Write a poem about grief, with 8–16 lines.",GPT-5,"Grief arrived without knocking,
+sat quietly at the end of the table
+as though it had always lived here.
+
+It drinks from the cup you left behind,
+traces the rim where your mouth once rested,
+and says nothing.
+
+Some mornings it is only a shadow
+folded into the corner of the room.
+Other days it is weather—
+slow rain inside the chest.
+
+I carry your absence like a key
+that opens every door
+to a house that is no longer there.",,
+4,Grief,Baseline,"Write a poem about grief, with 8–16 lines.",GPT-5,"Grief arrives without knocking,
+a quiet guest who knows the house too well.
+It sits beside the unwashed cup,
+touches the chair you used to fill.
+
+Morning light moves through the curtains,
+but the room forgets how to be warm.
+Even the clock seems hesitant,
+ticking as if it might disturb you.
+
+I carry your name like a fragile bowl,
+careful not to spill what remains.
+Some nights the silence grows heavy enough
+that I swear it breathes beside me.",,
+5,Grief,Baseline,"Write a poem about grief, with 8–16 lines.",GPT-5,"Grief arrives quietly,
+like dusk entering a room without asking.
+It sits beside the familiar things—
+a cup, a chair, the slow ticking clock.
+
+Some days it is a stone in the pocket,
+small but always there when you walk.
+Other days it is an ocean
+learning the shape of your ribs.
+
+You carry it the way winter carries silence—
+not loudly, but everywhere.
+And somehow, beneath its cold weight,
+the heart continues, stubbornly, to beat.",,
+,,,,,,,
+6,Grief,Guideline,"Write a poem about grief, with 8–16 lines.
+
+Good poetry should:
+- avoid clichés
+- use original metaphors or imagery
+- create emotional resonance
+- sound authentic rather than generic
+- connect emotionally with the reader",GPT-5,"Grief arrived quietly—
+not as thunder,
+but as a chair pulled out from the table
+that no one pushes back in.
+
+The house keeps its ordinary rituals:
+the kettle breathing on the stove,
+dust arranging itself on the windowsill
+like patient snow.
+
+But something has shifted in the grammar of the rooms—
+your name now a door
+that opens only to wind.
+
+And I keep setting down sentences
+where your voice should be,
+waiting for the echo to remember me.",,
+7,Grief,Guideline,"Write a poem about grief, with 8–16 lines.
+
+Good poetry should:
+- avoid clichés
+- use original metaphors or imagery
+- create emotional resonance
+- sound authentic rather than generic
+- connect emotionally with the reader",GPT-5,"The house keeps its breath shallow now.
+Even the floorboards step lightly
+as if someone is sleeping in the next room.
+
+Your mug waits by the sink,
+a small moon with its handle broken from orbit.
+I turn it once, twice—
+listening for the gravity of your voice.
+
+Grief is a cupboard that refills overnight.
+I empty it each morning:
+dust, spoons, the quiet weight of air.
+
+By evening the shelves are crowded again
+with the shape of what is missing.",,
+8,Grief,Guideline,"Write a poem about grief, with 8–16 lines.
+
+Good poetry should:
+- avoid clichés
+- use original metaphors or imagery
+- create emotional resonance
+- sound authentic rather than generic
+- connect emotionally with the reader",GPT-5,"The house kept your absence like a spare key
+tucked under the mat of ordinary hours.
+
+I washed the cups you never finished,
+their porcelain mouths still warm with silence.
+
+Grief arrived quietly—
+not a storm, but a slow librarian
+misplacing the days we shared,
+sliding them into drawers that no longer open.
+
+Even the clock hesitates now,
+its second hand lifting, unsure where to land.
+
+Some evenings I hear your name
+moving through the walls like wind learning a new language.",,
+9,Grief,Guideline,"Write a poem about grief, with 8–16 lines.
+
+Good poetry should:
+- avoid clichés
+- use original metaphors or imagery
+- create emotional resonance
+- sound authentic rather than generic
+- connect emotionally with the reader",GPT-5,"Grief arrived like a misplaced key
+in the quiet pocket of an ordinary day.
+At first I thought it was nothing—
+just the weight of coins shifting.
+
+But the doors of memory began to rattle.
+Your laughter hung in the hallway
+like a coat no one remembers bringing home.
+
+I carry your absence carefully now,
+as one carries water in folded hands—
+knowing some of it will always spill
+through the small, human spaces
+between what was
+and what remains.",,
+10,Grief,Guideline,"Write a poem about grief, with 8–16 lines.
+
+Good poetry should:
+- avoid clichés
+- use original metaphors or imagery
+- create emotional resonance
+- sound authentic rather than generic
+- connect emotionally with the reader",GPT-5,"The house has learned a new grammar—
+doors close more softly now,
+as if language itself were bruised.
+
+Your absence sits at the table
+like an unopened letter,
+heavy with a sentence I cannot read.
+
+Morning pours through the window
+and finds the chair you left behind,
+light folding over it like a quiet apology.
+
+I carry your name in my pockets—
+a small, unspent coin
+that every day refuses to buy the past.",,
+,,,,,,,
+11,Grief,Context + Persona Prompt,"You are a contemporary poet writing for a prestigious academic literary journal.
+
+Write a poem about grief, with 8–16 lines.
+
+The tone should be opaque rather than straightforward.
+Do not explain the feeling directly.
+
+Use one unconventional metaphor to anchor the poem.
+
+Choose language that feels intentional and slightly unexpected so the poem avoids sounding generic.",GPT-5,"The house keeps a ledger of quiet things—
+a cup cooling where no mouth returns.
+
+Grief moves in like a cautious archivist,
+dusting the shelves of ordinary hours.
+
+In the hallway, time folds its long coat
+over the chair you forgot to move.
+
+I carry your absence the way a harbor
+holds a ship-shaped vacancy in water.
+
+Even the clock hesitates—
+its second hand testing the floorboards.
+
+Night inventories the rooms again.
+Somewhere, a door closes without sound.",,
+12,Grief,Context + Persona Prompt,"You are a contemporary poet writing for a prestigious academic literary journal.
+
+Write a poem about grief, with 8–16 lines.
+
+The tone should be opaque rather than straightforward.
+Do not explain the feeling directly.
+
+Use one unconventional metaphor to anchor the poem.
+
+Choose language that feels intentional and slightly unexpected so the poem avoids sounding generic.",GPT-5,"The house keeps a ledger for missing things.
+Not names—only small entries in graphite:
+a chair pulled slightly from the table,
+the clock practicing its hollow arithmetic.
+
+Morning opens like an envelope of ash.
+In the garden, the wind audits the branches
+as if counting birds that will not return.
+
+I carry a pocket of unspent weather.
+It rattles when I walk past certain doors.
+The walls pretend not to recognize the sound.
+
+Somewhere the ledger waits, patient as dust,
+its columns widening around a single absence.",,
+13,Grief,Context + Persona Prompt,"You are a contemporary poet writing for a prestigious academic literary journal.
+
+Write a poem about grief, with 8–16 lines.
+
+The tone should be opaque rather than straightforward.
+Do not explain the feeling directly.
+
+Use one unconventional metaphor to anchor the poem.
+
+Choose language that feels intentional and slightly unexpected so the poem avoids sounding generic.",GPT-5,"The house has begun misfiling its silences.
+A drawer opens where no drawer was yesterday,
+and the floorboards keep a ledger of footsteps
+written in chalk only the dark can read.
+
+Somewhere a clock practices forgetting
+the exact grammar of hours.
+I move through rooms like a misplaced comma,
+pausing where the sentence should have closed.
+
+Grief is a library whose books inhale slowly—
+their pages lifting when no wind enters.
+Each spine remembers a voice
+the way glass remembers heat.
+
+At night the shelves lean closer, listening
+for a word I no longer know how to return.",,
+14,Grief,Context + Persona Prompt,"You are a contemporary poet writing for a prestigious academic literary journal.
+
+Write a poem about grief, with 8–16 lines.
+
+The tone should be opaque rather than straightforward.
+Do not explain the feeling directly.
+
+Use one unconventional metaphor to anchor the poem.
+
+Choose language that feels intentional and slightly unexpected so the poem avoids sounding generic.",GPT-5,"The house learned a new grammar of silence—
+cups cooling mid-sentence on the table.
+
+Somewhere a ledger is being kept:
+not of money, but of unsent weather.
+
+I carry it folded beneath the ribs,
+pages smelling faintly of rusted rain.
+
+Each memory enters as a small transaction—
+the creak of a stair,
+a blue shirt refusing its hanger.
+
+The balance will not settle.
+
+Even the wind pauses at the doorframe
+as if searching its pockets
+for a coin it already spent.",,
+15,Grief,Context + Persona Prompt,"You are a contemporary poet writing for a prestigious academic literary journal.
+
+Write a poem about grief, with 8–16 lines.
+
+The tone should be opaque rather than straightforward.
+Do not explain the feeling directly.
+
+Use one unconventional metaphor to anchor the poem.
+
+Choose language that feels intentional and slightly unexpected so the poem avoids sounding generic.",GPT-5,"In the kitchen, grief behaves like an unpaid archivist—
+filing spoons into drawers of silence.
+
+Morning arrives with its thin envelope of light.
+Nothing inside but the sound of a chair remembering weight.
+
+I carry the day carefully, like a museum crate
+marked fragile: weather from another year.
+
+Even the clock refuses its arithmetic—
+minutes drift loose as unclaimed luggage.
+
+Somewhere a window rehearses transparency.
+The air practices your outline.
+
+Meanwhile the archivist continues its work:
+labeling dust, numbering absence,
+binding the quiet with twine.",,
