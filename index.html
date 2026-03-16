@@ -97,9 +97,9 @@
         Each pair shares the same theme.
       </p>
       <p>
-        Read both poems carefully, then answer <strong>four short questions</strong>
+        Read both poems carefully, then answer <strong>five short questions</strong>
         about each pair. These questions ask about overall strength, emotional impact,
-        originality of language, and personal preference.
+        originality of language, personal preference, and human authorship.
       </p>
       <p>
         There are <strong>no right or wrong answers</strong>. We are interested in
@@ -177,8 +177,20 @@
       </div>
     </div>
 
+    <!-- Q5: Human Authorship -->
+    <div class="question-block" id="q5-block">
+      <p class="choice-question">Q5. Which poem do you think is more likely to have been written by a human?</p>
+      <div class="choice-options" role="group" aria-label="Human authorship choice" data-question="q5">
+        <button class="choice-btn" data-value="A" onclick="selectAnswer('q5', this)">Poem A</button>
+        <button class="choice-btn" data-value="B" onclick="selectAnswer('q5', this)">Poem B</button>
+        <button class="choice-btn" data-value="Both" onclick="selectAnswer('q5', this)">Both</button>
+        <button class="choice-btn" data-value="Neither" onclick="selectAnswer('q5', this)">Neither</button>
+        <button class="choice-btn" data-value="Not sure" onclick="selectAnswer('q5', this)">Not sure</button>
+      </div>
+    </div>
+
     <p class="validation-msg" id="comparison-validation" role="alert">
-      Please answer all four questions before continuing.
+      Please answer all five questions before continuing.
     </p>
     <button class="btn" onclick="nextComparison()">Next &rarr;</button>
   </section>

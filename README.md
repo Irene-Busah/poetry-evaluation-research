@@ -6,11 +6,12 @@ A web-based academic study designed to evaluate and compare AI-generated poetry 
 
 This study explores reader responses to different prompt augmentations in AI poetry generation. Participants are assigned a random subset of 9 pairwise comparisons from a pool of 45, balanced evenly across themes.
 
-For each pair, participants are asked four specific questions:
+For each pair, participants are asked five specific questions:
 1. **Stronger Overall** (Poem A / Poem B / Tie)
 2. **Emotional Impact** (Poem A / Poem B / Both equally / Not sure)
 3. **Originality of Language** (Poem A / Poem B / Both equally / Not sure)
 4. **Like / Endorse** (Poem A / Poem B / Both equally / Neither)
+5. **Human Authorship Perception** (Poem A / Poem B / Both / Neither / Not sure)
 
 The display order (left/right) is randomized per participant to prevent position bias, but the data is normalized back to the canonical `poemA` and `poemB` in the final dataset.
 
@@ -21,7 +22,7 @@ The display order (left/right) is randomized per participant to prevent position
 - `style.css`: Unified styling for both the study and the admin dashboard.
 - `poems.js`: The dataset of 45 real poems (derived from CSVs) and the 45 pairwise comparisons logic. Includes the random assignment algorithm.
 - `admin.html`: The secure admin dashboard.
-- `admin.js`: Admin logic handling Google Sign-In, real-time data fetching, stats rendering, and 18-column CSV export.
+- `admin.js`: Admin logic handling Google Sign-In, real-time data fetching, stats rendering, and 30-column CSV export.
 - `firebase-config.js`: Firebase API credentials and Admin Email configuration.
 
 ## Setup & Deployment
@@ -97,12 +98,16 @@ Data is stored in Firebase under the `sessions/` node. Each session corresponds 
         "emotional_impact_selected_condition": "Guideline",
 
         "originality_answer": "Both equally",
-        "originality_selected_poem_id": "",
-        "originality_selected_condition": "",
+        "originality_selected_poem_id": "BOTH",
+        "originality_selected_condition": "BOTH",
 
         "like_answer": "Poem B",
         "like_selected_poem_id": "Longing-Baseline-1",
         "like_selected_condition": "Baseline",
+
+        "human_authorship_answer": "Not sure",
+        "human_authorship_selected_poem_id": "NOT_SURE",
+        "human_authorship_selected_condition": "NOT_SURE",
 
         "timestamp": "2026-03-16T11:55:00.000Z"
       },
@@ -112,4 +117,4 @@ Data is stored in Firebase under the `sessions/` node. Each session corresponds 
 
 ### CSV Export
 
-The Admin Dashboard includes a "Export CSV" feature that flattens this nested JSON into a clean, **27-column** CSV file ready for statistical analysis in SPSS, R, or Python.
+The Admin Dashboard includes a "Export CSV" feature that flattens this nested JSON into a clean, **30-column** CSV file ready for statistical analysis in SPSS, R, or Python.

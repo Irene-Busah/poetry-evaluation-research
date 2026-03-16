@@ -78,6 +78,7 @@ function render(sessions) {
         emotional: r.emotional_impact_answer || "—",
         originality: r.originality_answer || "—",
         like: r.like_answer || "—",
+        human: r.human_authorship_answer || "—",
         timestamp: r.timestamp || s.completedAt || null,
       });
     });
@@ -162,7 +163,7 @@ function renderFamiliarity(sessions) {
 function renderTable(all) {
   const tbody = document.getElementById("responses-tbody");
   if (!all.length) {
-    tbody.innerHTML = '<tr><td colspan="9" class="empty">No responses yet.</td></tr>';
+    tbody.innerHTML = '<tr><td colspan="10" class="empty">No responses yet.</td></tr>';
     return;
   }
   const sorted = [...all].sort((a, b) => (b.timestamp || "").localeCompare(a.timestamp || ""));
@@ -177,6 +178,7 @@ function renderTable(all) {
       <td><span class="badge ${badgeCls(r.emotional)}">${esc(r.emotional)}</span></td>
       <td><span class="badge ${badgeCls(r.originality)}">${esc(r.originality)}</span></td>
       <td><span class="badge ${badgeCls(r.like)}">${esc(r.like)}</span></td>
+      <td><span class="badge ${badgeCls(r.human)}">${esc(r.human)}</span></td>
       <td class="mono" style="font-size:0.7rem">${esc(formatDate(r.timestamp))}</td>
     </tr>`;
   }).join("");
@@ -200,6 +202,7 @@ function exportCSV() {
       "emotional_impact_answer", "emotional_impact_selected_poem_id", "emotional_impact_selected_condition",
       "originality_answer", "originality_selected_poem_id", "originality_selected_condition",
       "like_answer", "like_selected_poem_id", "like_selected_condition",
+      "human_authorship_answer", "human_authorship_selected_poem_id", "human_authorship_selected_condition",
       "timestamp"
     ];
 
@@ -230,6 +233,10 @@ function exportCSV() {
           csv(r.like_answer || ""),
           csv(r.like_selected_poem_id || ""),
           csv(r.like_selected_condition || ""),
+
+          csv(r.human_authorship_answer || ""),
+          csv(r.human_authorship_selected_poem_id || ""),
+          csv(r.human_authorship_selected_condition || ""),
 
           csv(r.timestamp || s.completedAt || ""),
         ].join(","));

@@ -108,8 +108,8 @@ function startComparisons() {
 }
 
 function nextComparison() {
-  // Validate all 4 questions answered
-  const questions = ["q1", "q2", "q3", "q4"];
+  // Validate all 5 questions answered
+  const questions = ["q1", "q2", "q3", "q4", "q5"];
   const allAnswered = questions.every(q => state.currentAnswers[q] !== undefined);
   const msg = document.getElementById("comparison-validation");
 
@@ -189,7 +189,7 @@ function recordResponse() {
   const poemA = POEMS[comp.poemA_id];
   const poemB = POEMS[comp.poemB_id];
 
-  // Helper to extract selected poem and condition based on what participant clicked ("A" or "B")
+  // Helper to extract selected poem and condition based on what participant clicked
   function getSelectedDetails(answer) {
     if (answer === "A") {
       return { id: swapped ? comp.poemB_id : comp.poemA_id, condition: swapped ? poemB.condition : poemA.condition };
@@ -197,6 +197,10 @@ function recordResponse() {
     if (answer === "B") {
       return { id: swapped ? comp.poemA_id : comp.poemB_id, condition: swapped ? poemA.condition : poemB.condition };
     }
+    if (answer === "Both" || answer === "Both equally") return { id: "BOTH", condition: "BOTH" };
+    if (answer === "Neither") return { id: "NEITHER", condition: "NEITHER" };
+    if (answer === "Not sure") return { id: "NOT_SURE", condition: "NOT_SURE" };
+    
     return { id: "", condition: "" };
   }
 
@@ -204,6 +208,7 @@ function recordResponse() {
   const q2Details = getSelectedDetails(state.currentAnswers.q2);
   const q3Details = getSelectedDetails(state.currentAnswers.q3);
   const q4Details = getSelectedDetails(state.currentAnswers.q4);
+  const q5Details = getSelectedDetails(state.currentAnswers.q5);
 
   state.responses.push({
     comparisonId:            comp.id,
@@ -233,6 +238,10 @@ function recordResponse() {
     like_answer:                         state.currentAnswers.q4,
     like_selected_poem_id:               q4Details.id,
     like_selected_condition:             q4Details.condition,
+
+    human_authorship_answer:             state.currentAnswers.q5,
+    human_authorship_selected_poem_id:   q5Details.id,
+    human_authorship_selected_condition: q5Details.condition,
 
     timestamp:                 new Date().toISOString(),
   });
