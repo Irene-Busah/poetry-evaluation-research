@@ -191,13 +191,15 @@ function exportCSV() {
 
     const headers = [
       "sessionId", "completedAt", "familiarity",
-      "comparisonId", "theme",
+      "comparisonId", "comparison_type", "theme",
       "poemA_id", "poemB_id",
       "original_condition_A", "original_condition_B",
       "displayed_left_poem_id", "displayed_right_poem_id",
       "displayed_left_condition", "displayed_right_condition",
-      "stronger_overall_answer", "emotional_impact_answer",
-      "originality_answer", "like_answer",
+      "stronger_overall_answer", "stronger_overall_selected_poem_id", "stronger_overall_selected_condition",
+      "emotional_impact_answer", "emotional_impact_selected_poem_id", "emotional_impact_selected_condition",
+      "originality_answer", "originality_selected_poem_id", "originality_selected_condition",
+      "like_answer", "like_selected_poem_id", "like_selected_condition",
       "timestamp"
     ];
 
@@ -207,15 +209,28 @@ function exportCSV() {
         lines.push([
           csv(s.sessionId), csv(s.completedAt || ""),
           csv(s.familiarity || ""),
-          csv(r.comparisonId || ""), csv(r.theme),
+          csv(r.comparisonId || ""), csv(r.comparison_type || ""), csv(r.theme),
           csv(r.poemA_id), csv(r.poemB_id),
           csv(r.original_condition_A || ""), csv(r.original_condition_B || ""),
           csv(r.displayed_left_poem_id || ""), csv(r.displayed_right_poem_id || ""),
           csv(r.displayed_left_condition || ""), csv(r.displayed_right_condition || ""),
+
           csv(r.stronger_overall_answer || r.participantChoice || ""),
+          csv(r.stronger_overall_selected_poem_id || ""),
+          csv(r.stronger_overall_selected_condition || ""),
+
           csv(r.emotional_impact_answer || ""),
+          csv(r.emotional_impact_selected_poem_id || ""),
+          csv(r.emotional_impact_selected_condition || ""),
+
           csv(r.originality_answer || ""),
+          csv(r.originality_selected_poem_id || ""),
+          csv(r.originality_selected_condition || ""),
+
           csv(r.like_answer || ""),
+          csv(r.like_selected_poem_id || ""),
+          csv(r.like_selected_condition || ""),
+
           csv(r.timestamp || s.completedAt || ""),
         ].join(","));
       });

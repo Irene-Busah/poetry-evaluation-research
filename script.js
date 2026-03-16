@@ -189,15 +189,25 @@ function recordResponse() {
   const poemA = POEMS[comp.poemA_id];
   const poemB = POEMS[comp.poemB_id];
 
-  // Map visual answers (A/B) back to canonical IDs based on swap
-  function mapAnswer(answer) {
-    if (answer === "A") return swapped ? "B" : "A";
-    if (answer === "B") return swapped ? "A" : "B";
-    return answer; // Tie, Both equally, Not sure, Neither
+  // Helper to extract selected poem and condition based on what participant clicked ("A" or "B")
+  function getSelectedDetails(answer) {
+    if (answer === "A") {
+      return { id: swapped ? comp.poemB_id : comp.poemA_id, condition: swapped ? poemB.condition : poemA.condition };
+    }
+    if (answer === "B") {
+      return { id: swapped ? comp.poemA_id : comp.poemB_id, condition: swapped ? poemA.condition : poemB.condition };
+    }
+    return { id: "", condition: "" };
   }
+
+  const q1Details = getSelectedDetails(state.currentAnswers.q1);
+  const q2Details = getSelectedDetails(state.currentAnswers.q2);
+  const q3Details = getSelectedDetails(state.currentAnswers.q3);
+  const q4Details = getSelectedDetails(state.currentAnswers.q4);
 
   state.responses.push({
     comparisonId:            comp.id,
+    comparison_type:         comp.comparisonType.replace(/-/g, "_"), // e.g. Baseline_vs_Guideline
     theme:                   comp.theme,
     poemA_id:                comp.poemA_id,
     poemB_id:                comp.poemB_id,
@@ -207,10 +217,23 @@ function recordResponse() {
     displayed_right_poem_id: swapped ? comp.poemA_id : comp.poemB_id,
     displayed_left_condition:  swapped ? poemB.condition : poemA.condition,
     displayed_right_condition: swapped ? poemA.condition : poemB.condition,
-    stronger_overall_answer:   mapAnswer(state.currentAnswers.q1),
-    emotional_impact_answer:   mapAnswer(state.currentAnswers.q2),
-    originality_answer:        mapAnswer(state.currentAnswers.q3),
-    like_answer:               mapAnswer(state.currentAnswers.q4),
+
+    stronger_overall_answer:             state.currentAnswers.q1,
+    stronger_overall_selected_poem_id:   q1Details.id,
+    stronger_overall_selected_condition: q1Details.condition,
+
+    emotional_impact_answer:             state.currentAnswers.q2,
+    emotional_impact_selected_poem_id:   q2Details.id,
+    emotional_impact_selected_condition: q2Details.condition,
+
+    originality_answer:                  state.currentAnswers.q3,
+    originality_selected_poem_id:        q3Details.id,
+    originality_selected_condition:      q3Details.condition,
+
+    like_answer:                         state.currentAnswers.q4,
+    like_selected_poem_id:               q4Details.id,
+    like_selected_condition:             q4Details.condition,
+
     timestamp:                 new Date().toISOString(),
   });
 }
